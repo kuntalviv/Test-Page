@@ -20,7 +20,7 @@
         "king_koti": "King Koti",
     }
   function showContent(contentId) {
-      document.getElementById("current_location_heading").innerText = "Currently Showing: " + contentIdtoNameMap[contentId] + " Colleges";
+      document.getElementById("current_location_heading").innerText = "Currently Showing: " + contentIdToNameMap[contentId] + " Colleges";
       var iframes = document.getElementsByTagName("iframe");
       for (let i = 0; i < iframes.length; i++) {
         if(iframes[i].id === contentId) {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIHE Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+      <a href="#" onclick="showContent('himayat_nagar'); return false;">Himayat Nagar Colleges</a>
+      <a href="#" onclick="showContent('king_koti'); return false;">King Koti Colleges</a>
+      <iframe id="himayat_nagar" src="https://www.google.com/maps/d/u/1/embed?mid=1ngu2i2ddceXCtollk313H6Q75PiQ2d0&ehbc=2E312F" width="640" height="480" style="display:none;"></iframe>
+      <iframe id="king_koti" src="https://www.google.com/maps/d/u/1/embed?mid=1dq4wS1Sozp5FYinZCDU9WIpihXxWVyg&ehbc=2E312F" width="640" height="480" style="display:none;"></iframe>
+</body>
+<script>
+  showContent(contentId) {
+      var iframes = document.getElementsByTagName("iframe");
+      for (let i = 0; i < iframes.length; i++) {
+        if(iframes[i].id === contentId) {
+          iframes[i].style.display = "block";
+        } else {
+          iframes[i].style.display = "none";
+        }
+      }
+  }
+ 
+</script>
+</html>
